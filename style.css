@@ -456,6 +456,12 @@ h1 {
   height: 300px;
   border-radius: 50%;
   border: 3px solid yellow;
+  box-shadow: 0 0 25px yellow;
+  transition: 0.4s;
+}
+
+.founder img:hover{
+  box-shadow: 0 0 35px yellow;
 }
 
 .founder div {
