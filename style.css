@@ -1,0 +1,525 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#home{
+    background: linear-gradient(to left, rgb(54, 51, 51) ,black );
+    color: white;
+    height: 100vh;
+    width: cover;
+    background-position: center;
+}
+
+#home .navbar{
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#home .navbar .logo{
+    color: yellow;
+}
+
+#home .navbar ul{
+    display: flex;
+     gap: 25px;
+    padding-top: 10px;
+    padding-right: 250px;
+
+}
+
+
+#home .navbar ul li{
+    list-style: none;
+    font-weight: 700;
+    
+}
+
+#home .navbar ul li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#home .navbar ul li a:hover{
+   background-color: yellow;
+   padding:10px 15px;
+   border-radius: 10px;
+   color: black;
+   
+}
+
+#home .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 160px;
+
+}
+
+#home .header .mainImg img{
+    width: 300px;
+    height: 300px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 25px  yellow;
+    animation: float 3s ease-in-out infinite;
+    transition: 0.5s;
+}
+
+#home .header .mainImg img:hover{
+      box-shadow: 0 0 35px  yellow;
+        box-shadow: 0 0 45px  yellow;
+          box-shadow: 0 0 55px  yellow;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+ }
+
+ 100%{
+    transform: translateY(0px);
+ }
+}
+
+#home .header .mainTxt {
+    padding-top: 10px;
+    margin-right: 200px;
+}
+
+#home .header .mainTxt .typing-container {
+  padding-top: 7px;
+    font-family: monospace;
+  font-size: 2em;
+  color:yellow;
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* Typing animation for text reveal */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Blinking cursor animation */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+    #home .header .mainTxt h3{
+        padding-top: 9px;
+     }
+
+     .con-icons {
+        padding: 10px 2px;
+     }
+
+    #home .header .mainTxt .con-icons i{
+        font-size: 30px;
+        border: 2px solid yellow;
+        border-radius: 50%;
+        padding: 10px;  
+        transition: 0.6s;
+     }
+
+      #home .header .mainTxt .con-icons i:hover{
+            background-color: yellow;
+        color: black;
+        font-weight: 700;    
+      }
+
+     #home .header .mainTxt .btn{
+      display: flex;
+      padding: 10px ;
+      margin-left: -19px;
+
+     }
+
+      #home .header .mainTxt .btn a{
+        color: white;
+        text-decoration: none;
+        transition: 0.5s;
+        border: 2px solid yellow;
+        margin: 0 10px;
+        padding: 10px;
+        border-radius: 7px;
+      }
+ 
+      #home .header .mainTxt .btn a:hover{
+        background-color: yellow;
+        color: black;
+        font-weight: 700;
+      }
+
+      /* Contact Section  */
+#contact {
+  width: 100vw;
+  height: cover;
+  padding: 2rem;
+   background: linear-gradient(to right, rgb(54, 51, 51) ,black );
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* Heading */
+#contact h1 {
+  color: yellow;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Subheading */
+#contact p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+/* Form Styling */
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+#contactForm label {
+  text-align: left;
+  color: yellow;
+  font-weight: bold;
+}
+
+#contactForm input,
+#contactForm textarea {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  color: white;
+  font-size: 1rem;
+  width: 600px;
+}
+
+#contactForm textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+#contactForm button {
+  background-color: transparent;
+  border: 2px solid yellow;
+  font-size: larger;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+  background-color: yellow;
+  color: black;
+}
+
+/* Contact Info */
+.contact-info p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  margin: -4 10px;
+  display: inline-block;
+  color: white;
+}
+
+.social-icons i {
+     font-size: 30px;
+        border: 2px solid yellow;
+        border-radius: 50%;
+        padding: 10px;  
+        transition: 0.6s;
+}
+
+.social-icons i:hover {
+  background-color: #ffd700;
+  color: black;
+}
+
+footer {
+  position: sticky;
+  background-color: #1a1a1a;
+  color:white;
+  font-size: larger;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 10px rgba(255, 255, 0, 0.1);
+  z-index: 100;
+}
+
+
+
+/* Full-height services section */
+#services {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, rgb(54, 51, 51) ,black );
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Heading and paragraph */
+#services h1 {
+  color: yellow;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#services p {
+  color: #ccc;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  max-width: 600px;
+}
+
+/* Services grid */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Individual service cards */
+.service-card {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h2 {
+  color: yellow;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* project page */
+
+
+/* Projects section full viewport */
+#projects {
+  height: 100vh;
+  width: 100vw;
+ background: linear-gradient(to left, rgb(54, 51, 51) ,black );
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Heading and description */
+#projects h1 {
+  color: yellow;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#projects p {
+  color: #ccc;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  max-width: 600px;
+}
+
+/* Grid layout for projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Individual project cards */
+.project-card {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h2 {
+  color: yellow;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* Footer styling */
+footer {
+  background-color: #1a1a1a;
+  color: yellow;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* about us */
+
+
+#about {
+  padding: 2rem;
+  text-align: center;
+    background: linear-gradient(to right, rgb(54, 51, 51) ,black );
+    color: #ccc;
+}
+
+h1 {
+  color: yellow;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #ccc;
+}
+
+/* Founder Section */
+.founder {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.founder img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 3px solid yellow;
+}
+
+.founder div {
+  max-width: 400px;
+  text-align: left;
+}
+
+/* Skills */
+.section-title {
+  color: yellow;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+.skills {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.skill {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.skill span {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.bar {
+  background: #333;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+}
+
+.fill {
+  background: yellow;
+  height: 100%;
+  transition: width 1s ease;
+}
+
+/* Timeline */
+.timeline {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.timeline li {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid yellow;
+  color: #ccc;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: yellow;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
